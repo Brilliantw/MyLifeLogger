@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fall_sencor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lab.mylifelogger.FallSencorActivity">
+
+    <TextView
+        android:text="자이로 센서 X : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/G_X"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    <TextView
+        android:text="자이로 센서 Y : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/G_Y"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_below="@+id/G_X"
+        android:layout_alignLeft="@+id/G_X"
+        android:layout_alignStart="@+id/G_X" />
+
+    <TextView
+        android:text="자이로 센서 Z : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/G_Z"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_below="@+id/G_Y"
+        android:layout_alignLeft="@+id/G_Y"
+        android:layout_alignStart="@+id/G_Y" />
+
+    <TextView
+        android:text="가속도 센서 X : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A_X"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/G_Z"
+        android:layout_alignStart="@+id/G_Z" />
+
+    <TextView
+        android:text="가속도 센서 Y : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A_Y"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/A_X"
+        android:layout_alignLeft="@+id/A_X"
+        android:layout_alignStart="@+id/A_X" />
+
+    <TextView
+        android:text="가속도 센서 Z : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A_Z"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/A_Y"
+        android:layout_alignRight="@+id/A_X"
+        android:layout_alignEnd="@+id/A_X" />
+</RelativeLayout>

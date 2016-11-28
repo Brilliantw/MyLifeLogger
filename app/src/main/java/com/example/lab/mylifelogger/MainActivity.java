@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         bt_check = (Button) findViewById(R.id.Checkbt);
 
         intent_map = new Intent(this, MapsActivity.class);
+        intent_fall = new Intent(this, FallSencorActivity.class);
 
         bt_gps.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        bt_fall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if ( bt_fall.isChecked() ) {
+                    startActivity(intent_fall);
+                }
+            }
+        });
+
     }
 
 
