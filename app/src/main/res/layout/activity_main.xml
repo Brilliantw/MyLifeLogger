@@ -11,7 +11,8 @@
     tools:context="com.example.lab.mylifelogger.MainActivity">
 
     <ToggleButton
-        android:text="GPS"
+        android:textOff="GPS 인식 꺼짐"
+        android:textOn="GPS 인식 켜짐"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -30,7 +31,8 @@
         android:id="@+id/Logbt" />
 
     <ToggleButton
-        android:text="넘어짐 감지"
+        android:textOff="넘어짐 감지 켜짐"
+        android:textOn="넘어짐 감지 꺼짐"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Logbt"
