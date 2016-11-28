@@ -39,3 +39,4 @@ import android.hardware.SensorManager;  
 
 5. 일지
  - 2016.11.28 기능 구현 위한 기본 레이아웃 구성
+ - 2016.11.28 토글 버튼을 이용하여 Google Map API 불러옴 (굳이 토글버튼으로 할 필요는 없을 것 같음)
