@@ -1,24 +1,14 @@
 package com.example.lab.mylifelogger;
 
-import android.content.Intent;
-import android.location.Location;
-import android.location.LocationListener;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -114,8 +104,8 @@ public class FallSencorActivity extends AppCompatActivity implements SensorEvent
 
         boolean gps_enabled = false;
         boolean network_enabled = false;
-        public Double lat;
-        public Double lon;
+        public Double lat = 0.0;
+        public Double lon = 0.0;
 
 
 

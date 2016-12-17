@@ -5,14 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by HwanCheol on 2016-11-27.
- */
+
 
 public class ItemAdapter extends BaseAdapter{
     private ArrayList<ListItem> item_List = new ArrayList<>();
@@ -39,6 +36,9 @@ public class ItemAdapter extends BaseAdapter{
         final TextView tv_time = (TextView) convertView.findViewById(R.id.tv_time);
         final TextView tv_lat = (TextView) convertView.findViewById(R.id.tv_lat);
         final TextView tv_lgt = (TextView) convertView.findViewById(R.id.tv_lgt);
+        tv_time.setText(item_List.get(position).getTime());
+        tv_lat.setText(item_List.get(position).getLat());
+        tv_lgt.setText(item_List.get(position).getLgt());
         return convertView;
     }
     public boolean isEmpty(){

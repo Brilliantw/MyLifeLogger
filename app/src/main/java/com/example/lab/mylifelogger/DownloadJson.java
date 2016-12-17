@@ -46,7 +46,7 @@ public class DownloadJson extends AsyncTask<String, String, String> {
                     parsedData_1[i] = json.getString(jsonName_time);
                     parsedData_2[i] = json.getString(jsonName_lat);
                     parsedData_3[i] = json.getString(jsonName_lgt);
-                    CheckInfo.data += parsedData_1[i] + "@" + parsedData_2[i] + "%" + parsedData_3[i] + "&";
+                    CheckInfo.data += parsedData_1[i] + "@" + parsedData_2[i] + "#" + parsedData_3[i] + "&";
                 }
             }
         } catch(JSONException e) {
