@@ -1,0 +1,7 @@
+#Sat Dec 17 22:08:27 KST 2016
+base.0=/home/lab/AndroidStudioProjects/MyLifeLogger/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f0ed4c94e9f5c0627c69477ef77ed910b3aa744e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/lab/AndroidStudioProjects/MyLifeLogger/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03de7403f6d09fc9aa49e751782239ceee875669/classes.dex
+base.1=/home/lab/AndroidStudioProjects/MyLifeLogger/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03de7403f6d09fc9aa49e751782239ceee875669
+file.0=/home/lab/AndroidStudioProjects/MyLifeLogger/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f0ed4c94e9f5c0627c69477ef77ed910b3aa744e/classes.dex

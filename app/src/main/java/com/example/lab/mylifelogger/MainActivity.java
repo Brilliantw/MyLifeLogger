@@ -8,6 +8,8 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 import android.content.Context;
 import android.view.View;
+import android.location.*;
+
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,12 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    ToggleButton bt_gps;
-    ToggleButton bt_fall;
+    Button bt_gps;
+    Button bt_fall;
     Button bt_log;
     Button bt_check;
     Intent intent_map;
     Intent intent_fall;
+
+    private DownloadJson dj;
+    private String url = "http://52.78.170.91/myeong/get_info.php";
 
 
     @Override
@@ -36,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bt_gps = (ToggleButton) findViewById(R.id.GPSbt);
-        bt_fall = (ToggleButton) findViewById(R.id.Fallbt);
+        bt_gps = (Button) findViewById(R.id.GPSbt);
+        bt_fall = (Button) findViewById(R.id.Fallbt);
 
         bt_log = (Button) findViewById(R.id.Logbt);
         bt_check = (Button) findViewById(R.id.Checkbt);
@@ -48,22 +53,33 @@ public class MainActivity extends AppCompatActivity {
         bt_gps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ( bt_gps.isChecked() ) {
-                    startActivity(intent_map);
-                }
+                startActivity(intent_map);
+
             }
         });
 
         bt_fall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ( bt_fall.isChecked() ) {
-                    startActivity(intent_fall);
-                }
+                startActivity(intent_fall);
+
+            }
+        });
+        bt_log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CheckInfo.class);
+                dj = new DownloadJson();
+                dj.execute(url);
+                startActivity(intent);
             }
         });
 
     }
 
 
+
+
 }
+
+
